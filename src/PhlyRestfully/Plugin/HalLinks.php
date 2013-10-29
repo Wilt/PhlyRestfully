@@ -821,7 +821,7 @@ class HalLinks extends AbstractHelper implements
             }
 
             $id = $this->getIdFromResource($resource);
-            if (!$id === false) {
+            if ($id === false) {
                 // Cannot handle resources without an identifier
                 // Return as-is
                 $collection[] = $resource;
